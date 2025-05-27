@@ -101,9 +101,7 @@ server.tool(
 async function main() {
     const transport = new StdioServerTransport();
     await server.connect(transport);
-    console.error("Server is running on Stdio");
 }
-
 main().catch((error) => {
     console.error("Error starting server:", error);
     process.exit(1);
